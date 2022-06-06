@@ -51,28 +51,28 @@ const Contact = () => {
                 <div className="flex items-center justify-between py-4">
                   <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
                     <div className="rounded-full shadow-lg shadow-gray-600 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                      <Link
+                      <a
                         href={
                           "https://www.linkedin.com/in/ryan-milligan-18815820b/"
                         }
                       >
                         <FaLinkedinIn />
-                      </Link>
+                      </a>
                     </div>
                     <div className="rounded-full shadow-lg shadow-gray-600 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                      <Link href={"https://github.com/rmilligan006"}>
+                      <a href={"https://github.com/rmilligan006"}>
                         <FaGithub />
-                      </Link>
+                      </a>
                     </div>
                     <div className="rounded-full shadow-lg shadow-gray-600 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                      <Link href={"/#contact"}>
+                      <a href={"/#contact"}>
                         <AiOutlineMail />
-                      </Link>
+                      </a>
                     </div>
                     <div className="rounded-full shadow-lg shadow-gray-600 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                      <Link href="/resume">
+                      <a href="/resume">
                         <BsFillPersonLinesFill />
-                      </Link>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -149,7 +149,7 @@ const Contact = () => {
           </div>
         </div>
         <div className="flex justify-center py-12">
-          <Link href="/">
+          <Link href="/" passHref>
             <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300">
               <HiOutlineChevronDoubleUp className="text-[#5651e5]" size={30} />
             </div>

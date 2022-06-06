@@ -54,35 +54,35 @@ const Navbar = () => {
       }
     >
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
-        <Link style={{ color: `${linkColor}` }} href="/">
+        <a style={{ color: `${linkColor}` }} href="/">
           <Image
             src="/../public/assets/navLogo.png"
             alt="/"
             width="140"
             height="150"
           />
-        </Link>
+        </a>
         <div>
           <ul className="hidden md:flex">
-            <Link href="/">
+            <a href="/">
               <li className="ml-10 text-sm uppercase hover:border-b">Home</li>
-            </Link>
-            <Link href="/#about">
+            </a>
+            <a href="/#about">
               <li className="ml-10 text-sm uppercase hover:border-b">About</li>
-            </Link>
-            <Link href="/#skills">
+            </a>
+            <a href="/#skills">
               <li className="ml-10 text-sm uppercase hover:border-b">Skills</li>
-            </Link>
-            <Link href="/#projects">
+            </a>
+            <a href="/#projects">
               <li className="ml-10 text-sm uppercase hover:border-b">
                 Projects
               </li>
-            </Link>
-            <Link href="/#contact">
+            </a>
+            <a href="/#contact">
               <li className="ml-10 text-sm uppercase hover:border-b">
                 Contact
               </li>
-            </Link>
+            </a>
           </ul>
           <div onClick={handleNav} className="md:hidden">
             <AiOutlineMenu size={25} />
@@ -105,14 +105,14 @@ const Navbar = () => {
           {/*Mobile Menu */}
           <div>
             <div className="flex w-full items-center justify-between">
-              <Link href="/">
+              <a href="/">
                 <Image
                   src="/../public/assets/navLogoMenu.png"
                   alt="/"
                   width="120"
                   height="115"
                 />
-              </Link>
+              </a>
               <div
                 onClick={handleNav}
                 className="rounded-full shadow-lg bg-slate-200 shadow-gray-800 p-3 cursor-pointer"
@@ -161,28 +161,26 @@ const Navbar = () => {
               </p>
               <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
                 <div className="rounded-full bg-slate-200 shadow-lg shadow-gray-800 p-3 cursor-pointer hover:scale-105 ease-in duration-500">
-                  <Link
+                  <a
                     href={
                       "https://www.linkedin.com/in/ryan-milligan-18815820b/"
                     }
                   >
                     <FaLinkedinIn />
-                  </Link>
+                  </a>
                 </div>
                 <div className="rounded-full bg-slate-200 shadow-lg shadow-gray-800 p-3 cursor-pointer hover:scale-105 ease-in duration-500">
-                  <Link href={"https://github.com/rmilligan006"}>
+                  <a href={"https://github.com/rmilligan006"}>
                     <FaGithub />
-                  </Link>
+                  </a>
                 </div>
                 <div className="rounded-full bg-slate-200 shadow-lg shadow-gray-800 p-3 cursor-pointer hover:scale-105 ease-in duration-500">
-                  <Link href={"/#contact"}>
+                  <a href={"/#contact"}>
                     <AiOutlineMail />
-                  </Link>
+                  </a>
                 </div>
                 <div className="rounded-full bg-slate-200 shadow-lg shadow-gray-800 p-3 cursor-pointer hover:scale-105 ease-in duration-500">
-                  <Link href="/resume">
-                    <BsFillPersonLinesFill />
-                  </Link>
+                  <BsFillPersonLinesFill />
                 </div>
               </div>
             </div>
